@@ -1,0 +1,22 @@
+{
+  "name": "bun_project_template",
+  "module": "src/main.ts",
+  "type": "module",
+  "devDependencies": {
+    "bun-types": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "scripts": {
+    "start": "bun src/main.ts",
+    "dev": "bun --watch src/main.ts",
+    "clean": "rm -rf dist && echo 'Done.'"
+  },
+  "compilerOptions": {
+    "baseUrl": "./src",
+    "paths": {
+      "_example": ["./_example.ts"]
+    }
+  }
+}
